@@ -5,6 +5,22 @@
     font-family: 'Work Sans', sans-serif;
     font-weight: 500;
 }
+/*START Scrollbar*/
+html::-webkit-scrollbar {
+    width: 10px;
+}
+   
+html::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+}
+html::-webkit-scrollbar-thumb {
+    background: rgb(71, 71, 71);
+    border-radius: 10px;
+}
+/*END Scrollbar*/
+
 
 /*START Header Section*/
 .header {
@@ -26,6 +42,7 @@
 #navbar a {
     font-size: 15px;
 }
+
 #medium-logo {
     width: 180px;
 }
@@ -36,8 +53,235 @@
     border-radius: 100px;
     transition: background-color 0.4s ease-in-out;
 }
+/*END Header Section*/
+
+
+/*START Main Section*/
+#main {
+    min-height: 500px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding: 0;
+    background-color: #FFC017;
+    overflow: hidden;
+}
+
+.left-div {
+    height: 100%;
+    max-width: 1200px;
+    z-index: 2;
+    padding-left: 10px;
+}
+
+.left-div-centered {
+    height: 100%;
+    margin-top: 5vh;
+    max-width: 600px;
+}
+
+#stay {
+    font-size: 100px;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+#discover {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 4vh;
+}
+
+#start {
+    font-size: 20px;
+    border-radius: 100px;
+    padding: 5px;
+    width: 200px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.height-centered {
+    height: 85%;
+}
+
+.right-div {
+    top: 0;
+    right: -50px;
+    height: 120%;
+    width: 45%;
+    z-index: 1;
+    margin-left: 20px;
+}
+
+.m-letter {
+    height: 100%;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+}
+/*END Main Section*/
+
+
+/*START Trending Section*/
+.trend-div, .articles-section {
+    max-width: 1200px;
+}
+
+.trend-svg {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 3px;
+    border-radius: 100px;
+}
+/*END Trending Section*/
+
+
+/*START Users Section*/
+.six-articles {
+    max-width: 1200px;
+}
+
+.number {
+    line-height: 36px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #E6E6E6;
+}
+
+.profile-photo {
+    border-radius: 100px;
+}
+
+.user-name {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.main-text {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 25px;
+}
+
+.sub-text {
+    color: #797575;
+}
+
+.date {
+    font-size: 13px;
+    line-height: 16px;
+    color: #797575;
+}
+
+.article-text {
+    line-height: 20px;
+    font-weight: 700;
+}
+/*START Users Section*/
+
+
+/*START News Section*/
+.article-buttons {
+    font-size: 13px;
+    padding: 3px 10px;
+    border-radius: 100px;
+    border: none;
+    color: #797575;
+}
+/*END News Section*/
+
+
+/*START Navigation Section*/
+.suggestion-div {
+    position: static;
+    width: 100%;
+}
+
+.bottom-border {
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+#more-discover {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.buttons {
+    border: none;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 100px;
+}
+
+.buttons:hover {
+    background-color: #E6E6E6;
+}
+
+.see-more {
+    text-decoration: none;
+    color: #299525;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.see-more:hover {
+    color: #292929;
+}
+
+.navigation-links li {
+    margin-right: 20px;
+}
+
+.navigation-links li a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #676767;
+}
+/*END Navigation Section*/
 
 .btn-scrolling {
     background-color: #299525;
 }
-/*END Header Section*/
+
+.sticky {
+    position: fixed;
+    top: 100px;
+    width: 370px;
+    /* Your other styles here */
+}
+
+/*START Responsive Section*/
+@media screen and (max-width: 1200px) {
+    .sticky {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #stay {
+        font-size: 80px;
+        /*font-weight: 600;*/
+    }
+
+    .left-div-centered {
+        margin-top: 7vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #stay {
+        font-size: 60px;
+    }
+}
+/*END Responsive Section*/
+
+
+
+
+
