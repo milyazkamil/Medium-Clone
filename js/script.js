@@ -1,7 +1,6 @@
 const header = document.querySelector(".header");
 const mLetter = document.querySelector(".m-letter");
 const btnStart = document.querySelector(".btn-start");
-const suggestionDiv = document.querySelector(".suggestion-div");
 
 //M Letters Background Changing
 setInterval(() => {
@@ -27,16 +26,3 @@ window.addEventListener("scroll", function() {
         btnStart.classList.remove("btn-scrolling");
     }
 });
-
-//Make the suggestion div sticky while scrolling.
-window.onscroll = function() {myFunction()};
-
-function myFunction() {
-  if (window.innerWidth > 980) {
-    if (window.pageYOffset >= 855) {
-      suggestionDiv.classList.add("sticky");
-    } else {
-      suggestionDiv.classList.remove("sticky");
-    }
-  }
-}

@@ -192,8 +192,9 @@ html::-webkit-scrollbar-thumb {
 
 /*START Navigation Section*/
 .suggestion-div {
-    position: static;
-    width: 100%;
+    position: sticky;
+    overflow: visible;
+    top: 6rem;
 }
 
 .bottom-border {
@@ -241,13 +242,6 @@ html::-webkit-scrollbar-thumb {
 
 .btn-scrolling {
     background-color: #299525;
-}
-
-.sticky {
-    position: fixed;
-    top: 100px;
-    width: 370px;
-    /* Your other styles here */
 }
 
 /*START Responsive Section*/
